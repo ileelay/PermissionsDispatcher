@@ -13,7 +13,7 @@ import javax.lang.model.type.TypeMirror;
 
 public class WrongParametersException extends RuntimeException {
 
-    public static RuntimeException getInstance(ExecutableElement e, List<TypeMirror> requiredTypes) {
+    public static RuntimeException getInstance(ExecutableElement e, TypeMirror[] requiredTypes) {
         return new WrongParametersException("Method  must declare parameters of type");
     }
 
